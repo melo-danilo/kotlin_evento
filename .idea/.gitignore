@@ -1,3 +1,11 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+./workspace.xml
+./tasks.xml
+./gradle.xml
+./assetWizardSettings.xml
+./dictionaries
+./libraries
+# Android Studio 3 in .gitignore file.
+./caches
+./modules.xml
+# Comment next line if keeping position of elements in Navigation Editor is relevant for you
+./navEditor.xml
