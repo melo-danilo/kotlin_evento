@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/image_evento"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
+        android:background="@color/placeholder"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/title_evento"
+        style="@style/TextAppearance.Material3.TitleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@id/image_evento"
+        android:lines="2"
+        android:text="Feira de adoção de animais na Redenção"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/data_evento"
+        style="@style/TextAppearance.Material3.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_evento"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@id/image_evento"
+        android:text="15/04/2019, às 21:45:34.143" />
+
+    <TextView
+        android:id="@+id/localizacao_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/preco_evento"
+        style="@style/TextAppearance.Material3.ActionBar.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_evento"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="R$ 29.99" />
+
+</RelativeLayout>
