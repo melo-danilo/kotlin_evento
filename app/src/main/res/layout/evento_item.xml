@@ -37,7 +37,7 @@
         android:layout_below="@id/title_evento"
         android:layout_marginTop="11dp"
         android:layout_toEndOf="@id/image_evento"
-        android:text="15/04/2019, às 21:45:34.143" />
+        android:text="15/04/2019, às 21:45:34" />
 
     <TextView
         android:id="@+id/localizacao_evento"

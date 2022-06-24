@@ -27,13 +27,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:scaleType="centerCrop"
-
                 android:background="@color/placeholder"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/white"
                 android:padding="16dp">
 
                 <!-- Title, secondary and supporting text -->
@@ -43,8 +43,9 @@
                     android:layout_height="wrap_content"
                     android:lines="2"
                     android:text="Feira de adoção de animais na Redenção"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    style="@style/TextAppearance.Material3.TitleLarge"
                     />
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -54,8 +55,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="534784400000"
-                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:text="15/04/2019, às 21:45:34"
+                        style="@style/TextAppearance.Material3.BodySmall"
                         android:textColor="?android:attr/textColorSecondary" />
 
                     <TextView
@@ -66,7 +67,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="16dp"
                         android:text="R$ 29.99"
-                        android:textAppearance="?attr/textAppearanceBody2"
+                        style="@style/TextAppearance.Material3.ActionBar.Subtitle"
                         android:textColor="?android:attr/textColorSecondary"
                         />
 
@@ -96,6 +97,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    style="@style/TextAppearance.Material3.TitleMedium"
                     android:text="Descricao"/>
 
                 <ScrollView
@@ -108,7 +110,7 @@
                     <TextView
                         android:id="@+id/descricao_evento"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="O Patas Dadas estará na Redenção, nesse domingo, com cães para adoção e produtos à venda!\n\nNa ocasião, teremos bottons, bloquinhos e camisetas!\n\nTraga seu Pet, os amigos e o chima, e venha aproveitar esse dia de sol com a gente e com alguns de nossos peludinhos - que estarão prontinhos para ganhar o ♥ de um humano bem legal pra chamar de seu. \n\nAceitaremos todos os tipos de doação:\n- guias e coleiras em bom estado\n- ração (as que mais precisamos no momento são sênior e filhote)\n- roupinhas \n- cobertas \n- remédios dentro do prazo de validade"
                         android:textAppearance="?attr/textAppearanceBody2"
                         android:textColor="?android:attr/textColorSecondary" />
@@ -127,7 +129,6 @@
             android:id="@+id/close_evento"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:text="Outlined button"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"

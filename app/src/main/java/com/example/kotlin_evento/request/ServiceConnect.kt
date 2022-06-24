@@ -11,7 +11,7 @@ class ServiceConnect {
 
     companion object {
 
-        val httpClient by lazy {
+        private val httpClient: OkHttpClient by lazy {
             OkHttpClient()
                 .newBuilder()
                 .build()

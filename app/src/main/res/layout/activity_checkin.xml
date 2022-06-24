@@ -14,21 +14,21 @@
         android:background="@color/placeholder" />
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title_evento"
+        style="@style/TextAppearance.Material3.ActionBar.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/image_evento"
         android:layout_marginTop="22dp"
         android:lines="2"
         android:text="Feira de adoção de animais na Redenção"
-        android:textAlignment="center"
-        style="@style/TextAppearance.Material3.ActionBar.Title" />
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/txt_checkin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title"
+        android:layout_below="@id/title_evento"
         android:layout_marginTop="22dp"
         android:text="Checkin"
         android:textAlignment="center"
@@ -43,9 +43,11 @@
         android:layout_marginEnd="22dp"
         android:layout_marginTop="22dp"
         android:layout_below="@id/txt_checkin"
-        android:hint="Nome">
+        android:hint="Nome*">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNome"
+            android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -59,9 +61,11 @@
         android:layout_marginEnd="22dp"
         android:layout_marginTop="11dp"
         android:layout_below="@id/txt_nome"
-        android:hint="Email">
+        android:hint="Email*">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail"
+            android:inputType="textWebEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -75,7 +79,7 @@
         android:layout_margin="22dp">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_local"
+            android:id="@+id/button_cancel"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:text="Cancelar" />
